@@ -3,6 +3,6 @@
   tasks:
     - name: Ansible apt-get to get install nginx
       apt:
-        name: nginx
+        name: mariadb-server
         state: present
         force_apt_get: yes
