@@ -1,11 +1,11 @@
 - hosts: mariadbs
   become: yes
+  tasks:
   - name: Run apt upgrade
-  apt:
+    apt:
     upgrade: "yes"
     update_cache: yes
     cache_valid_time: 432000
-  tasks:
   - name: Install MariaDB repository
     apt_repository: repo='deb http://ftp.igh.cnrs.fr/pub/mariadb/repo/10.0/ubuntu trusty main' state=present
   - name: Add repository key to the system
