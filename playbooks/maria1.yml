@@ -1,6 +1,8 @@
-- name: MariaDB installation
-  hosts: mariadbs
-  become: yes
+---
+- name: MariaDB
+  hosts: all
+  gather_facts: true
+  become: true
   vars:
     mysql_root_password: "Password1"
   tasks:
