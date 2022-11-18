@@ -1,6 +1,5 @@
 - name: MariaDB
   hosts: mariadbs
-  gather_facts: true
   become: true
   vars:
     mysql_root_password: "Password1"
