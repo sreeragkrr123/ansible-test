@@ -7,7 +7,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh 'ansible-galaxy collection install -r requirements.yml'
-        sh "ansible-playbook -i inventory/mariadb.hosts --user --extra-vars 'ansible_ssh_pass=Sreerag@123' sreerag playbooks/mariadb.yml"
+        sh "ansible-playbook -i inventory/mariadb.hosts --user sreerag --extra-vars 'ansible_ssh_pass=Sreerag@123' playbooks/mariadb.yml"
       }
     }
   }
