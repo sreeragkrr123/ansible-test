@@ -1,5 +1,4 @@
 - name: MariaDB
-  hosts: mariadbs
   become: yes
   vars:
     mysql_root_password: "Password1"
