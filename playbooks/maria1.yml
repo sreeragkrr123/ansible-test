@@ -1,6 +1,6 @@
 - name: MariaDB
   hosts: mariadbs
-  become: true
+  become: yes
   vars:
     mysql_root_password: "Password1"
   tasks:
