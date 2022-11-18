@@ -6,4 +6,4 @@
   - name: Add repository key to the system
     apt_key: keyserver=keyserver.ubuntu.com id=0xcbcb082a1bb943db
   - name: Install MariaDB Server
-    apt: name=mariadb-server state=present update_cache: yes
+    apt: name=mariadb-server state=present update_cache=yes
