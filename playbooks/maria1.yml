@@ -1,4 +1,5 @@
-- name: MariaDB
+- name: MariaDB installation
+  hosts: mariadbs
   become: yes
   vars:
     mysql_root_password: "Password1"
