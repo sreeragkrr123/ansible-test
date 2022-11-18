@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh "ansible-playbook -i inventory/mariadb.hosts  playbooks/mariadb.yml -b"
+        sh "ansible-playbook -i inventory/mariadb.hosts  playbooks/maria1.yml -b"
       }
     }
   }
