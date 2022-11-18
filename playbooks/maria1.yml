@@ -5,8 +5,8 @@
   become: true
   vars:
     mysql_root_password: "Password1"
-  tasks:
-    - name: install mariadb
+  tasks
+- name: install mariadb
       yum:
         name:
           - mariadb-server
