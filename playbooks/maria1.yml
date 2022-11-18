@@ -3,8 +3,8 @@
   tasks:
   - name: Run apt upgrade
     apt:
-    upgrade: "yes"
-    cache_valid_time: 432000
+      upgrade: "yes"
+      cache_valid_time: 432000
   - name: Install MariaDB repository
     apt_repository: repo='deb http://ftp.igh.cnrs.fr/pub/mariadb/repo/10.0/ubuntu trusty main' state=present
   - name: Add repository key to the system
