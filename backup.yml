@@ -15,6 +15,6 @@
           remote_src: true
           dest: /home/sreerag
     - name: Disk usage from command module
-      command: "df -h /
+      command: "df -h /"
 
         
