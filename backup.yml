@@ -6,8 +6,6 @@
         src: backup.sh
         dest: /tmp
         mode: 0777
-        tags:
-        - simple_copy
     - name: Execute the script
       ansible.builtin.script: /tmp/backup.sh
     - name: Copy Backup to ansible
