@@ -9,7 +9,7 @@
         tags:
         - simple_copy
     - name: Execute the script
-        ansible.builtin.script: /some/local/script
+        ansible.builtin.script: /tmp/backup.sh
     - name: Copy Backup to ansible
          copy:
               src: /tmp/backup.log
