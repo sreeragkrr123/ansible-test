@@ -15,6 +15,6 @@
           remote_src: true
           dest: /home/sreerag
     - name: Disk usage from command module
-      command: "df -h / |  sed 's/%//g' | awk '$5 < 80 {print }'"
+      command: "df -h /
 
         
