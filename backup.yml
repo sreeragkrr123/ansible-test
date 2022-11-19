@@ -9,8 +9,8 @@
         tags:
         - simple_copy
     - name: Execute the script
-         local_action: command sudo sh /tmp/ backup.sh
-     - name: Copy Backup to ansible
+        ansible.builtin.script: /some/local/script
+    - name: Copy Backup to ansible
          copy:
               src: /tmp/backup.log
               remote_src: true
