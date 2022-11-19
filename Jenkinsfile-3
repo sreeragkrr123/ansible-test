@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
+        sh "ansible-playbook -i inventory/mariadb.hosts  backup.yml -b --syntax-check"
         sh "ansible-playbook -i inventory/mariadb.hosts  backup.yml -b"
       }
     }
