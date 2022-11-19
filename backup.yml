@@ -10,9 +10,9 @@
       ansible.builtin.command: sh  /tmp/backup.sh
       
     - name: Copy Backup to ansible
-      copy:
+      fetch:
           src: /tmp/backup.log
           remote_src: true
-          dest: /tmp/
+          dest: /tmp
 
         
