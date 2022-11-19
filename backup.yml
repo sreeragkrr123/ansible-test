@@ -9,11 +9,11 @@
         tags:
         - simple_copy
     - name: Execute the script
-        ansible.builtin.script: /tmp/backup.sh
+      ansible.builtin.script: /tmp/backup.sh
     - name: Copy Backup to ansible
-         copy:
-              src: /tmp/backup.log
-              remote_src: true
-              dest: /tmp/
+      copy:
+          src: /tmp/backup.log
+          remote_src: true
+          dest: /tmp/
 
         
