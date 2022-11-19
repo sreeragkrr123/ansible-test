@@ -7,7 +7,7 @@
         dest: /tmp
         mode: 0777
     - name: Execute the script
-      local_action: ansible.builtin.command sh  /tmp/backup.sh
+      ansible.builtin.command sh  /tmp/backup.sh
     - name: Copy Backup to ansible
       copy:
           src: /tmp/backup.log
