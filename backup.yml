@@ -8,7 +8,7 @@
         mode: 0777
         tags:
         - simple_copy
-     - name: Execute the script
+    - name: Execute the script
          local_action: command sudo sh /tmp/ backup.sh
      - name: Copy Backup to ansible
          copy:
