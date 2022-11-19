@@ -16,8 +16,5 @@
           dest: /home/sreerag
      - name: Disk usage from command module
        command: df -h / |  sed 's/%//g' | awk '$5 < 80 {print }'
-       register: space
-       - debug:
-            var: space
 
         
