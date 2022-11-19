@@ -7,8 +7,7 @@
         dest: /tmp
         mode: 0777
     - name: Execute the script
-      ansible.builtin.script: /tmp/backup.sh
-      remote_src: true
+      script: /tmp/backup.sh
     - name: Copy Backup to ansible
       copy:
           src: /tmp/backup.log
